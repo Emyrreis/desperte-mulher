@@ -134,7 +134,7 @@ class WelcomeScreen extends StatelessWidget {
           const SizedBox(height: 12),
           Text(
             'Ao final, você verá um resultado com orientações. Não há resposta certa '
-                'ou errada — apenas a sua realidade importa aqui.',
+                'ou errada, apenas a sua realidade importa aqui.',
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               height: 1.6,
             ),

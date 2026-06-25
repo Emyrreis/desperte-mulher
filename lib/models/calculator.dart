@@ -38,17 +38,13 @@ class RiskResult {
   String get orientationMessage {
     switch (classification) {
       case RiskClassification.baixo:
-        return 'Sua situação apresenta sinais de alerta. '
-            'Considere buscar orientação com profissionais de apoio.';
+        return 'Conte com nosso apoio. ';
       case RiskClassification.moderado:
-        return 'Sua situação merece atenção. '
-            'Recomendamos conversar com um profissional da rede de proteção.';
+        return 'Nossa rede de profissionais está disponível para você. ';
       case RiskClassification.alto:
-        return 'Sua situação indica risco significativo. '
-            'Existem recursos disponíveis para te ajudar quando você se sentir pronta.';
+        return 'Existem recursos disponíveis para te ajudar, estamos aqui. ';
       case RiskClassification.muitoAlto:
-        return 'Sua situação indica risco elevado. '
-            'A rede de proteção está disponível para te apoiar com sigilo e cuidado.';
+        return 'Estamos aqui para te apoiar com sigilo e cuidado, fale concosco. ';
     }
   }
 }
@@ -56,7 +52,7 @@ class RiskResult {
 class RiskCalculator {
   static const int _maxScore = 5; // limite por categoria
 
-  /// Calcula o resultado a partir de um mapa {questionId: valor selecionado}
+  /// calcula o resultado pela calculadora de risco
   static RiskResult calculate(
       Map<String, int> answers,
       List<Question> questions,
