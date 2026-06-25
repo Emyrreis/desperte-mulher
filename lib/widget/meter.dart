@@ -1,5 +1,4 @@
-// widgets/risk_meter_widget.dart
-// Medidor visual de risco em tempo real
+// medidor visual de risco em tempo real
 
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
@@ -34,7 +33,7 @@ class RiskMeterWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Progresso do formulário
+          // progresso do formulário
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -62,7 +61,7 @@ class RiskMeterWidget extends StatelessWidget {
             ),
           ),
 
-          // Indicadores parciais (aparecem depois de 3 respostas)
+          // indicadores
           if (answeredCount >= 3) ...[
             const SizedBox(height: 12),
             Row(

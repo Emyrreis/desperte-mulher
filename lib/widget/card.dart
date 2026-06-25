@@ -1,5 +1,4 @@
-// widgets/question_card_widget.dart
-// Card de perguntas
+// card de perguntas
 
 import 'package:flutter/material.dart';
 import '../models/questions_model.dart';
@@ -38,7 +37,7 @@ class QuestionCardWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Número e label do tipo
+            // número e label do tipo
             Row(
               children: [
                 Container(
@@ -97,7 +96,7 @@ class QuestionCardWidget extends StatelessWidget {
 
             const SizedBox(height: 14),
 
-            // Texto da pergunta
+            // texto da pergunta
             Text(
               question.text,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
